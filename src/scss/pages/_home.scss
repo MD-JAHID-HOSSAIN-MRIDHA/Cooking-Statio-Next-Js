@@ -1,0 +1,540 @@
+@use "../global" as *;
+@use "../partials" as *;
+
+// hero section
+
+.hero {
+  @include flex-center;
+  justify-content: space-between;
+  align-items: start;
+  padding-top: size(120);
+  position: relative;
+  .smile_icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    @include breakpoint(mobile576) {
+      right: -90px;
+    }
+  }
+  .hero-swiper {
+    width: 100%;
+    @include radius(26);
+    overflow: hidden;
+    img {
+      @include radius(26);
+      width: 100%;
+      max-height: 348px;
+    }
+    .swiper-hero-prev,
+    .swiper-hero-next {
+      background-color: $yellow-light;
+      width: 24px;
+      height: 63px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      @include flex-center;
+      z-index: 2;
+    }
+    .swiper-hero-prev {
+      left: 11px;
+    }
+    .swiper-hero-next {
+      right: 11px;
+    }
+  }
+
+  .hero_action_btn {
+    text-align: center;
+  }
+
+  .live_btn {
+    @include circle;
+    border: 2px solid $primary;
+    width: 60px;
+    aspect-ratio: 1/1;
+    position: relative;
+    margin-left: 25px;
+    &::after {
+      content: "Live kitchen";
+      display: inline-block;
+      color: $primary;
+      position: absolute;
+      left: 80%;
+      width: max-content;
+      background-color: white;
+      @include font($inter, 12, 400, normal, 20);
+    }
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 40%;
+      transform: translate(-50%);
+      background-color: $primary;
+      width: 10px;
+      aspect-ratio: 1;
+      @include circle;
+      animation: blinking 2s ease-in-out infinite;
+    }
+  }
+
+  @keyframes blinking {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @include breakpoint(tab992) {
+    align-items: center;
+  }
+  .o {
+    display: inline-block;
+    width: 38px;
+    height: 112px;
+    transform: rotate(-90deg);
+    border-radius: 40px;
+    border: 6px solid #0c8040;
+    margin: 0px 40px;
+    position: relative;
+    top: 40px;
+    margin-left: 40px;
+  }
+}
+
+// about section
+.about_sec {
+  margin-top: size(50);
+  @include flex-column;
+  @include flex-center;
+  text-align: center;
+  @include breakpoint(tab992) {
+    @include flex-center-vert;
+    @include flex-row;
+    margin-top: size(90);
+    text-align: start;
+  }
+  .title {
+    @include font($eczar, 30, semibold, normal, 45);
+    @include breakpoint(mobile576) {
+      @include font($eczar, 40, semibold, normal, 52);
+    }
+    color: $primary;
+    margin-bottom: size(24);
+  }
+  .des {
+    color: $section-top-des;
+    @include font($nunito, 18, medium, normal, 24);
+    margin-bottom: size(18);
+  }
+  & > * {
+    flex: 1;
+  }
+  .watch_btn_container {
+    display: flex;
+    justify-content: center;
+    .watch_btn {
+      @include flex-center;
+      gap: 19px;
+      margin-top: size(50);
+      // margin-left: 17rem;
+      text-align: center;
+      // padding-right: size(24);
+
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: -12px;
+        left: -31px;
+        width: 79px;
+        height: 73px;
+        border: 2px solid #fae392;
+        z-index: -1;
+        @include radius(8);
+        transition: 0.5s;
+      }
+      &:hover::after {
+        left: 0px;
+        // border: 2px solid red;
+        width: 110%;
+        top: -6px;
+        height: 80px;
+      }
+    }
+  }
+}
+
+// featured section
+.featured_sec {
+  margin-top: size(50);
+  position: relative;
+  @include breakpoint(tab992) {
+    margin-top: size(100);
+  }
+  .featured-swiper {
+    margin-top: size(40);
+    @include breakpoint(tab992) {
+      margin-top: size(90);
+    }
+    padding-bottom: size(10);
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
+    .featured_card {
+      background-color: $green-light;
+      @include radius(48);
+      padding-left: 33px;
+      max-width: 300px;
+      height: 296px;
+      padding-right: 33px;
+      margin-top: 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // gap: size(35);
+      box-shadow: 0px 4px 8px 0px rgba(11, 110, 105, 0.25);
+      padding-bottom: size(7);
+      .title {
+        @include font($eczar, 28, 600, normal, 52);
+        transform: translateY(-2rem);
+        color: $primary;
+        text-align: center;
+      }
+      transition: 0.3s;
+      &:hover {
+        // transform: scale(1.1);
+        box-shadow: 0px 4px 8px 4px rgba(11, 110, 105, 0.25);
+      }
+    }
+    .featured_dish {
+      width: size(198);
+      aspect-ratio: 1/1;
+      transform: translateY(-3rem);
+    }
+  }
+}
+
+.featured-swiper-next,
+.featured-swiper-prev {
+  @include circle;
+  border: 2px solid $primary;
+  width: size(40);
+  height: size(40);
+  @include flex-center;
+  @include breakpoint(mobile576) {
+    width: size(50);
+    height: size(50);
+  }
+  color: black;
+  position: absolute;
+  top: 60%;
+  transition: 0.3s;
+  z-index: 1;
+  &:hover {
+    background-color: $primary;
+    color: white;
+  }
+}
+.featured-swiper-next {
+  right: 1%;
+  @include breakpoint(mobile768) {
+    right: -2%;
+  }
+  @include breakpoint(desktop1200) {
+    right: -4%;
+  }
+}
+.featured-swiper-prev {
+  left: 1%;
+  @include breakpoint(mobile768) {
+    left: -2%;
+  }
+  @include breakpoint(desktop1200) {
+    left: -4%;
+  }
+}
+.featured_dish_action {
+  text-align: center;
+  margin-top: size(60);
+  margin-bottom: size(60);
+}
+// how we work section
+.how_work_sec {
+  background-color: $green-light;
+  padding-top: size(50);
+  padding-bottom: size(100);
+  @include breakpoint(desktop1100) {
+    background-image: url("../../assets/images/home/food.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding-top: size(90);
+    padding-bottom: size(145);
+  }
+  .section_body {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 3rem;
+    max-width: 375px;
+    & > :not(:last-child) {
+      &::after {
+        content: url("../../assets/images/store/Ellipse_step.svg");
+        position: absolute;
+        top: 0;
+        display: inline-block;
+        width: 192px;
+        aspect-ratio: 1;
+        // border: 1px solid transparent;
+        // border-top: 1px solid #1a5d1a;
+        @include circle;
+      }
+    }
+
+    & > :nth-child(even) {
+      align-self: end;
+      direction: rtl;
+      padding-right: 1rem;
+      &::after {
+        transform: rotate(268deg);
+        left: -53px;
+        top: 165px;
+      }
+    }
+
+    & > :nth-child(odd) {
+      align-self: start;
+      &::after {
+        left: 64px;
+        top: 10rem;
+      }
+    }
+    @include breakpoint(desktop1024) {
+      max-width: 60rem;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0;
+      height: 32rem;
+      & > :nth-child(odd) {
+        &::after {
+          top: 14rem !important;
+          left: 6rem;
+        }
+      }
+      & > :nth-child(even) {
+        align-self: end;
+        direction: ltr;
+        padding-right: 1rem;
+        &::after {
+          transform: rotate(99deg);
+          left: 48px;
+          top: -182px;
+        }
+        // figure {
+        //   margin-right: 2.5rem;
+        // }
+      }
+    }
+    .step_card {
+      position: relative;
+      // figure {
+      //   display: flex;
+      //   justify-content: center;
+      // }
+      .content {
+        width: 200px;
+        aspect-ratio: 1;
+        text-overflow: clip;
+        background-color: $yellow;
+        @include circle;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 8px;
+      }
+
+      .step {
+        @include font($eczar, 24, 600, normal, 32);
+        color: $primary;
+      }
+      .step_des {
+        // width: 316px;
+      }
+    }
+  }
+}
+
+.whychoose {
+  padding: size(40) size(0);
+  @include breakpoint(mobile576) {
+    padding: size(60) size(0);
+  }
+  @include breakpoint(tab992) {
+    padding: size(90) size(0);
+  }
+  .image-wrapper {
+    @include flex;
+    align-items: flex-start;
+    gap: size(10);
+    margin-top: size(60);
+    figure {
+      flex-grow: 1;
+      overflow: hidden;
+      flex-basis: 50%;
+      height: size(400);
+      img {
+        height: 100%;
+      }
+    }
+    figure:nth-child(2n) {
+      margin-top: 200px; /* Adjust the value as needed */
+    }
+  }
+}
+.pricing {
+  background: #f8fffb;
+  padding: size(40) size(0);
+  @include breakpoint(mobile576) {
+    padding: size(60) size(0);
+  }
+  @include breakpoint(tab992) {
+    padding: size(90) size(0);
+  }
+}
+.testimonial {
+  padding: size(40) size(0);
+  @include breakpoint(mobile576) {
+    padding: size(60) size(0);
+  }
+  @include breakpoint(tab992) {
+    padding: size(90) size(0);
+  }
+
+  .single-testimonial {
+    @include flex-column;
+    gap: size(20);
+    align-items: flex-start;
+    padding: size(50) size(0);
+    padding-bottom: size(0);
+    .profile-info {
+      @include flex;
+      gap: size(20);
+      .testimonial-thumb {
+        @include square(60);
+        overflow: hidden;
+        @include radius(60);
+      }
+
+      img {
+        @include wh100;
+      }
+    }
+    .text {
+      color: rgba(4, 4, 21, 0.6);
+      @include font($nunito, 20, medium, normal, 34);
+    }
+    .name {
+      color: rgba(4, 4, 21, 0.8);
+      @include font($nunito, 24, semibold, normal, 34);
+    }
+    .designation {
+      color: rgba(92, 92, 93, 0.8);
+      @include font($nunito, 16, semibold, normal, 22);
+      margin-bottom: size(30);
+    }
+  }
+}
+.joinus {
+  background: linear-gradient(
+      101deg,
+      rgba(5, 44, 5, 0.62) 41.04%,
+      rgba(27, 87, 27, 0.65) 65.41%,
+      rgba(232, 184, 15, 0.65) 94.42%
+    ),
+    url("../../assets/images/home/jounus.png");
+  background-size: cover;
+  background-position: center;
+  padding: size(30) size(0);
+
+  .joinus-inner {
+    @include border(solid, 6, #f9dd74);
+    @include radius(8);
+    padding: size(50);
+    color: $white;
+    @include flex-column;
+    text-align: center;
+    align-items: center;
+    gap: size(28);
+  }
+}
+.event {
+  padding: size(40) size(0);
+  @include breakpoint(mobile576) {
+    padding: size(60) size(0);
+  }
+  @include breakpoint(tab992) {
+    padding: size(90) size(0);
+  }
+  .eventimg {
+    border-radius: 390px 390px 0px 0px;
+    overflow: hidden;
+    height: 100%;
+    min-height: size(600);
+    @include breakpoint(tab992) {
+      min-height: auto;
+    }
+    img {
+      @include wh100;
+    }
+  }
+}
+
+.ourchefs {
+  padding: size(40) size(0);
+  @include breakpoint(mobile576) {
+    padding: size(60) size(0);
+  }
+  @include breakpoint(tab992) {
+    padding: size(90) size(0);
+  }
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+span.swiper-pagination-bullet {
+  transition: all 0.3s ease;
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: $primary;
+  opacity: 1;
+  width: size(40);
+  height: size(11);
+  @include radius(20);
+}
+
+.swiper-pagination-bullet {
+  background-color: #fbd85d;
+  opacity: 1;
+  @include square(11);
+}
+
+.gap {
+  width: 100%;
+  height: 70px;
+}

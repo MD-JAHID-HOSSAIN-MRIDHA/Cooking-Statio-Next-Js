@@ -1,0 +1,248 @@
+@use "../global" as *;
+@use "../partials" as *;
+@use "../utilities" as *;
+.checkout {
+  margin-top: size(20);
+  padding: size(100) size(0);
+
+  .section-top {
+    @include flex-column;
+    // padding-bottom: size(70);
+    svg {
+      width: 18rem;
+    }
+    span {
+      margin-top: size(-14);
+    }
+  }
+  .left-col {
+    .title {
+      color: #111;
+      leading-trim: both;
+      text-edge: cap;
+      font-family: Eczar;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 30px;
+    }
+    .inputbox {
+      @include flex-start;
+      gap: size(12);
+      margin-top: size(20);
+
+      label {
+        color: #111;
+        leading-trim: both;
+        text-edge: cap;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+      }
+      input {
+        @include border(solid, 1, #e5e5e5);
+        @include radius(5);
+        padding: size(8);
+        @include transitionsall;
+        &:focus {
+          border-color: $primary;
+        }
+      }
+      .edit-info {
+        color: #0c8040;
+        font-family: $nunito;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px; /* 216.667% */
+      }
+    }
+    .method {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 26px;
+      padding: 16px;
+      border: 2px solid $primary;
+      align-items: center;
+      border-radius: 4px;
+      margin-bottom: 30px;
+      .payments {
+        display: flex;
+        flex-wrap: wrap;
+        // gap: size(10);
+        align-items: center;
+        justify-content: center;
+        img {
+          max-width: 4rem;
+          display: block;
+          @include transitionsall;
+          @include hover {
+            filter: grayscale(100%);
+            transform: scale(1.1);
+          }
+        }
+        @include breakpoint(tab992) {
+          justify-content: flex-start;
+        }
+      }
+    }
+    .payment-info {
+      .card-number {
+        position: relative;
+        margin-bottom: 28px;
+        .visa {
+          position: absolute;
+          right: 10px;
+          top: 46%;
+          width: 50px;
+        }
+      }
+      .info {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+  .right-col {
+    @include border(solid, 1, #e5e5e5);
+    padding: size(30);
+    @include radius(1);
+    .billing-box {
+      @include flex-column;
+      gap: size(14);
+      .title {
+        color: #111;
+        font-family: Eczar;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        // line-height: 30px;
+        display: flex;
+        align-items: center;
+        // text-align: center;
+      }
+      .line {
+        height: size(1);
+        width: 100%;
+        background-color: #ededed;
+      }
+      .plan-detail {
+        background-color: #434443;
+        color: $white;
+        color: #fff;
+        leading-trim: both;
+        text-edge: cap;
+        font-family: Nunito;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: center;
+        padding: size(10);
+        @include radius(5);
+      }
+      .single-bill {
+        @include flex-between;
+        padding: size(10) size(20);
+        border-bottom: 1px solid #e5e5e5;
+        // @include radius(35);
+        .name {
+          color: #111;
+          leading-trim: both;
+          text-edge: cap;
+          font-family: Nunito;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 26px; /* 185.714% */
+        }
+        .value {
+          color: #696868;
+          leading-trim: both;
+          text-edge: cap;
+          font-family: Nunito;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 26px; /* 185.714% */
+        }
+        &.last {
+          background: rgba(241, 240, 240, 0.55);
+        }
+      }
+      .confirm-ordr-btn {
+        background-color: $primary;
+        padding: size(10) size(18);
+        color: $white;
+        @include radius(5);
+        margin-top: size(20);
+        &:hover {
+          background-color: hsl(147, 83%, 17%);
+        }
+      }
+    }
+  }
+}
+.step-wrapper {
+  border-radius: 8px;
+  background: #fff;
+  // box-shadow: 0px 1px 3px 0px rgba(17, 24, 39, 0.09);
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: size(70);
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-direction: column;
+  @include breakpoint(mobile768) {
+    flex-direction: row;
+    align-items: center;
+    padding: 29px 70px;
+  }
+  .line {
+    height: 4px;
+    background-color: #cdcdd0;
+    margin: 0 10px;
+  }
+  .active-line {
+    background-color: $primary;
+  }
+  .step-btn {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #64748b;
+    font-family: $nunito;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    .step-count {
+      display: flex;
+      width: 32px;
+      // padding: 11.2px 0px 11.2px 0px;
+      height: 32px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 80px;
+      background: #cbd5e1;
+      color: #64748b;
+      font-family: $nunito;
+      font-size: 14.4px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+  .active-step {
+    .step-count {
+      border: 3px solid $primary;
+      border-radius: 50%;
+      color: $primary;
+      background-color: transparent;
+    }
+    color: #1e293b;
+    font-weight: 600;
+  }
+}
