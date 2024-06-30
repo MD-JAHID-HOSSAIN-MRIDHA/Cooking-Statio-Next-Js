@@ -1,6 +1,7 @@
+
 import logo from "@/assets/images/Logo.svg";
 import Image from "next/image";
-import Link from "next/link";
+import NavLink from "./NavLink";
 
 export default function Navbar() {
 
@@ -8,10 +9,10 @@ export default function Navbar() {
     <header>
       <nav className="navbar navbar-expand-lg bg-white p-0 z-3 fixed-top">
         <div className="container">
-          <Link href="/"
+          <NavLink href="/"
           >
             <Image src={logo} alt="Cooking station logo" />
-          </Link>
+          </NavLink>
           <div
             className="d-flex d-lg-none justify-content-center align-items-center gap-3"
             role="search"
@@ -52,40 +53,40 @@ export default function Navbar() {
               <div className="d-flex justify-content-between w-100">
                 <ul className="navbar-nav mx-auto mb-2 mt-lg-2">
                   <li className="nav-item">
-                    <Link
-                      className="nav-link active"
+                    <NavLink
+                      className="nav-link"
                       aria-current="page"
                       href="/"
                     >
                       Home
-                    </Link>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" href="/about">About us</Link>
-                  </li>
-
-                  <li className="nav-item">
-                    <a className="nav-link" href="/menu">Menu</a>
+                    <NavLink className="nav-link" href="/about">About us</NavLink>
                   </li>
 
                   <li className="nav-item">
-                    <Link className="nav-link" href="/event">Event</Link>
+                    <NavLink className="nav-link" href="/menu">Menu</NavLink>
                   </li>
 
                   <li className="nav-item">
-                    <Link className="nav-link" href="/packages">Packages</Link>
+                    <NavLink className="nav-link" href="/event">Event</NavLink>
+                  </li>
+
+                  <li className="nav-item">
+                    <NavLink className="nav-link" href="/packages">Packages</NavLink>
                   </li>
                   <li className="nav-item">
-                    <Link
+                    <NavLink
                       className="nav-link"
                       href="/authentications/chef-registration"
                     >
                       Join as chef
-                    </Link>
+                    </NavLink>
                   </li>
 
                   <li className="nav-item">
-                    <Link className="nav-link" href="/contact">Contact Us</Link>
+                    <NavLink className="nav-link" href="/contact">Contact Us</NavLink>
                   </li>
                 </ul>
 
@@ -93,11 +94,11 @@ export default function Navbar() {
                   className="d-lg-flex d-none justify-content-center align-items-center gap-3"
                   role="search"
                 >
-                  <Link href="/authentications/login" className="login_btn">
+                  <NavLink href="/authentications/login" className="login_btn">
                     Login
-                  </Link>
+                  </NavLink>
 
-                  <Link href="/packages" className="cs_btn">Book Your Plan </Link>
+                  <NavLink href="/packages" className="cs_btn">Book Your Plan </NavLink>
                 </div>
               </div>
             </div>

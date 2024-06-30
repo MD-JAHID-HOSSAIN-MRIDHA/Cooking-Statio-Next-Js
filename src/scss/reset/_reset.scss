@@ -141,11 +141,6 @@ img {
   object-fit: cover;
 }
 
-svg,
-picture {
-  @include wh100;
-}
-
 a {
   @include transitionsall;
 }
