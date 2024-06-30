@@ -72,7 +72,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-         
+
           <div className="footer-col">
             <h4 className="title">Download Our App</h4>
             <p className="des text-center text-lg-start">
