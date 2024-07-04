@@ -14,8 +14,28 @@ export default function FeaturedSwiper() {
   return (
     <>
       <Swiper
-        slidesPerView={4}
+        slidesPerView={1}
         modules={[Navigation]}
+        spaceBetween={10}
+        loop={true}
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1220: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+        }}
         navigation={{ nextEl: nextRef.current, prevEl: prevRef.current }}
         className="featured-swiper"
       >
@@ -85,10 +105,10 @@ export default function FeaturedSwiper() {
         </SwiperSlide>
       </Swiper>
       <div ref={nextRef} className="featured-swiper-next">
-        <MdKeyboardArrowRight className="w-75"/>
+        <MdKeyboardArrowRight size={30}/>
       </div>
       <div ref={prevRef} className="featured-swiper-prev">
-        <MdKeyboardArrowLeft className="w-75"/>
+        <MdKeyboardArrowLeft size={30}/>
       </div>
     </>
   )

@@ -1,3 +1,4 @@
+import ChefSwiper from "@/Components/home/ChefSwiper";
 import FeaturedSwiper from "@/Components/home/FeaturedSwiper";
 import HeroSwiper from "@/Components/home/HeroSwiper";
 import chefAbout from "@/assets/images/chefs/chef_about.jpg";
@@ -20,6 +21,7 @@ import smileSVG from "@/assets/images/icons/smile.svg";
 import verifyIcon from "@/assets/images/icons/verify.svg";
 import watchVideo from "@/assets/images/icons/watch_video.svg";
 import Image from "next/image";
+import { BiConversation } from "react-icons/bi";
 import { FaFacebookMessenger, FaPhone, FaWhatsapp } from "react-icons/fa";
 
 export const metadata = {
@@ -960,7 +962,7 @@ export default function Home() {
               experience
             </p>
           </div>
-          <div className="swiper chefswiper py-5">
+          {/* <div className="swiper chefswiper py-5">
             <div className="swiper-wrapper">
               <div className="swiper-slide">
                 <div className="chefcard">
@@ -1077,7 +1079,8 @@ export default function Home() {
               </div>
             </div>
             <div className="swiper-pagination"></div>
-          </div>
+          </div> */}
+          <ChefSwiper />
         </div>
       </section>
 
@@ -1153,7 +1156,7 @@ export default function Home() {
             aria-expanded="false"
             aria-controls="collapseExample"
           >
-            <i className="fa-regular fa-comments fs-3"></i>
+            <BiConversation size={30} />
           </button>
         </div>
       </section>
