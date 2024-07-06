@@ -77,6 +77,9 @@ export default function Navbar() {
                     <NavLink className="nav-link" href="/packages">Packages</NavLink>
                   </li>
                   <li className="nav-item">
+                    <NavLink className="nav-link" href="/blog">Blog</NavLink>
+                  </li>
+                  <li className="nav-item">
                     <NavLink
                       className="nav-link"
                       href="/authentications/chef-registration"

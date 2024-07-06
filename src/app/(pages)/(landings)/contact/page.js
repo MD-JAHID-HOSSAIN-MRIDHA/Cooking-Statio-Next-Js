@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "Contact || Cooking station",
+  description: "this is contact page of cooking station",
+};
 export default function ContactPage() {
   return (
     <>
