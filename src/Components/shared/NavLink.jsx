@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation"
 
 export default function NavLink(props) {
   const pathname = usePathname()
-  console.log(props.href)
   return (
     <Link {...props} className={`${props.className} ${pathname == props.href ? "active" : null}`}>
       {props.children}
