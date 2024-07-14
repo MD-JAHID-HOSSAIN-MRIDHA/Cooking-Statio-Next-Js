@@ -26,6 +26,18 @@
       width: 100%;
       max-height: 348px;
     }
+    .swiper-pagination-bullet-hero {
+      background-color: #fbd85d;
+      opacity: 1;
+      @include square(11);
+    }
+    .swiper-pagination-bullet-active {
+      background-color: $primary;
+      opacity: 1;
+      width: size(40);
+      height: size(11);
+      @include radius(20);
+    }
     .swiper-hero-prev,
     .swiper-hero-next {
       background-color: $yellow-light;
@@ -528,11 +540,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   @include radius(20);
 }
 
-.swiper-pagination-bullet {
-  background-color: #fbd85d;
-  opacity: 1;
-  @include square(11);
-}
+
 
 .gap {
   width: 100%;

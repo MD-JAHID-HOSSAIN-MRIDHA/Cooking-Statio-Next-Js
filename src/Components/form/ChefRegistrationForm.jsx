@@ -1,6 +1,8 @@
 "use client"
-import nidSvg from "@/assets/icons/NID.svg"
-import Image from "next/image"
+import food_safety_cirtificate from "@/assets/icons/cirtificate.svg";
+import nidSvg from "@/assets/icons/NID.svg";
+import Image from "next/image";
+import { FaUpload } from "react-icons/fa6";
 export default function ChefRegistrationForm() {
 
   return (
@@ -219,7 +221,7 @@ export default function ChefRegistrationForm() {
             />
             <div className="upload_icon_container">
               <span className="upload_icon">
-                <i className="fa-solid fa-upload"></i>
+                <FaUpload />
               </span>
             </div>
           </label>
@@ -238,14 +240,14 @@ export default function ChefRegistrationForm() {
             hidden
           />
           <label for="food_safety_cirtificate" className="upload_button">
-            <img
-              src="../assets/icons/cirtificate.svg"
-              alt=""
+            <Image
+              src={food_safety_cirtificate}
+              alt="Food Safety Certificate"
               className="upload_file_image"
             />
             <div className="upload_icon_container">
               <span className="upload_icon">
-                <i className="fa-solid fa-upload"></i>
+                <FaUpload />
               </span>
             </div>
           </label>
@@ -265,14 +267,14 @@ export default function ChefRegistrationForm() {
             hidden
           />
           <label for="others_cirtificate" className="upload_button">
-            <img
-              src="../assets/icons/cirtificate.svg"
-              alt=""
+            <Image
+              src={food_safety_cirtificate}
+              alt="Others Certificate"
               className="upload_file_image"
             />
             <div className="upload_icon_container">
               <span className="upload_icon">
-                <i className="fa-solid fa-upload"></i>
+                <FaUpload />
               </span>
             </div>
           </label>
