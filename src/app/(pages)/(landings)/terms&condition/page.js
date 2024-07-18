@@ -18,8 +18,8 @@ export default function TermsPage() {
                   <path
                     d="M3 37C89.4781 25.0528 175.7 9.57513 262.468 5.06034C296.926 3.26742 331.647 1.94484 366.115 4.16548C369.648 4.39309 378.832 3.99732 370.795 6.02401"
                     stroke="#0C8040"
-                    stroke-width="6"
-                    stroke-linecap="round"
+                    strokeWidth="6"
+                    strokeLinecap="round"
                   />
                 </svg>
               </span>

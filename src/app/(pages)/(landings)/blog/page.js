@@ -228,15 +228,15 @@ export default function BlogPage() {
                   <path
                     d="M14.2083 17.4168L7.79165 11.0002L14.2083 4.5835"
                     stroke="#0C8040"
-                    stroke-width="2"
-                    stroke-linecap="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
                     stroke-linejoin="round"
                   />
                   <path
                     d="M24.2083 17.4168L17.7916 11.0002L24.2083 4.5835"
                     stroke="#0C8040"
-                    stroke-width="2"
-                    stroke-linecap="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
                     stroke-linejoin="round"
                   />
                 </svg>
@@ -267,15 +267,15 @@ export default function BlogPage() {
                   <path
                     d="M17.7916 4.58317L24.2083 10.9998L17.7916 17.4165"
                     stroke="#0C8040"
-                    stroke-width="2"
-                    stroke-linecap="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
                     stroke-linejoin="round"
                   />
                   <path
                     d="M7.79163 4.58317L14.2083 10.9998L7.79163 17.4165"
                     stroke="#0C8040"
-                    stroke-width="2"
-                    stroke-linecap="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
                     stroke-linejoin="round"
                   />
                 </svg>

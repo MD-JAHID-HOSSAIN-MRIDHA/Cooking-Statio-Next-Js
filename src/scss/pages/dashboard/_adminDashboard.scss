@@ -45,3 +45,64 @@
     }
   }
 }
+.payment-row {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 40px 0px;
+  @include breakpoint(mobile576) {
+    flex-direction: row;
+  }
+  .payment-card {
+    border-radius: 14px;
+    border: 1px solid var(--Foundation-Neutral-200, #e5e5e5);
+    background: #f5fffe;
+    padding: 17px;
+    // width: 614px;
+    flex: 1;
+    .payment-card-title {
+      color: #05004e;
+      font-family: $inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px; /* 150% */
+      margin-bottom: 40px;
+    }
+    .payment-list-group {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      .payment-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0px;
+        .payment-info {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          figure {
+            width: 40px;
+          }
+          .payment-method {
+            color: #202224;
+            font-family: $nunito;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
+          .payment-amount {
+            color: #202224;
+            font-family: $nunito;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  }
+}

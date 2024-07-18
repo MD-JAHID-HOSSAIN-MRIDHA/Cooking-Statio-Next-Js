@@ -54,3 +54,27 @@
 .lightyellow-bg {
   background: #fff6e9 !important;
 }
+.four-col-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+  justify-items: center;
+  @include breakpoint(mobile576) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include breakpoint(desktop1024) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include breakpoint(desktop1100) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.light-blue-bg {
+  background-color: #e5eeff;
+}
+.light-yellow-bg {
+  background-color: #fbfde6;
+}
+.light-blue-bg-2{
+  background-color: #FFFBF3!important;
+}
