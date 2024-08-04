@@ -1,5 +1,6 @@
+"use client";
 import loader from "@/assets/icons/loader.json";
-import { Lottie } from "@/Components/shared/ClientImport";
+import Lottie from "lottie-react";
 
 export default function Loading() {
   return (

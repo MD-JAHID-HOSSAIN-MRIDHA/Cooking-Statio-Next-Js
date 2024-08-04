@@ -94,6 +94,10 @@ const icon3 = (
 export default function AdminDashboard() {
   return (
     <>
+      <div className="greet-container">
+        <h3 className="welcome">Welcome back, Rafi</h3>
+        <p className="desc">Track, manage and forecast your customers and orders.</p>
+      </div>
       <div className="four-col-grid">
         <ReportCard title="Total Sales (Daily)" text="5" />
         <ReportCard title="Total Sales (Weekly)" text="5" />
@@ -103,7 +107,7 @@ export default function AdminDashboard() {
           title="Total Meal Delivered"
           text="5"
           icon={icon1}
-          bgColor="light-blue-bg"
+          bgColor="light-yellow-bg-2"
         />
         <ReportCard
           title="Total Cost"
@@ -147,7 +151,7 @@ export default function AdminDashboard() {
       {/* payment row */}
       <div className="payment-row">
         <div className="payment-card light-blue-bg-2">
-          <h3 className="payment-card-title">Support Status</h3>
+          <h3 className="payment-card-title mb-2">Support Status</h3>
           <SupportStatus />
         </div>
 
@@ -174,6 +178,111 @@ export default function AdminDashboard() {
             </li>
           </ul>
         </div>
+      </div>
+
+      <div className="payment-row event-row">
+        <div className="payment-card light-blue-bg-2">
+          <h3 className="payment-card-title mb-2">Event Booking</h3>
+          <ul className="payment-list-group">
+            <li className="payment-list">
+              <span className="event-type">New Event</span>
+              <span className="event-count">54</span>
+            </li>
+            <li className="payment-list">
+              <span className="event-type">New Event</span>
+              <span className="event-count">54</span>
+            </li>
+            <li className="payment-list">
+              <span className="event-type">New Event</span>
+              <span className="event-count">54</span>
+            </li>
+            <li className="payment-list">
+              <span className="event-type">New Event</span>
+              <span className="event-count">54</span>
+            </li>
+          </ul>
+        </div>
+
+        <div className="two-col-grid">
+          <ReportCard
+            title="Corporate Deals"
+            text="5"
+            bgColor="light-sweet-bg"
+          />
+          <ReportCard title="Ongoing Deals" text="5" bgColor="light-sweet-bg" />
+          <ReportCard
+            title="Total Sales in Tk"
+            text="5"
+            bgColor="light-sweet-bg"
+          />
+          <ReportCard
+            title="Total Corporate (Gross)"
+            text="5"
+            bgColor="light-sweet-bg"
+          />
+        </div>
+      </div>
+      <div className="four-col-grid">
+        <ReportCard
+          title="Total Refund (Daily)"
+          text="5"
+          bgColor="light-green-bg"
+        />
+        <ReportCard
+          title="Total Refund (Weekly)"
+          text="5"
+          bgColor="light-green-bg"
+        />
+        <ReportCard
+          title="Total Refund (Monthly)"
+          text="5"
+          bgColor="light-green-bg"
+        />
+        <ReportCard
+          title="Total Refund (Gross)"
+          text="5"
+          bgColor="light-green-bg"
+        />
+        <ReportCard
+          title="Meal Delivery & Cancel (Daily)"
+          text="5"
+          bgColor="light-yellow-bg-2"
+        />
+        <ReportCard
+          title="Meal Delivery & Cancel (Weekly)"
+          text="5"
+          bgColor="light-yellow-bg-2"
+        />
+        <ReportCard
+          title="Meal Delivery & Cancel (Monthly)"
+          text="5"
+          bgColor="light-yellow-bg-2"
+        />
+        <ReportCard
+          title="Meal Delivery & Cancel (Gross) "
+          text="5"
+          bgColor="light-yellow-bg-2"
+        />
+        <ReportCard
+          title="Total Cost (Daily)"
+          text="5"
+          bgColor="light-green-bg-2"
+        />
+        <ReportCard
+          title="Total Cost (weekly)"
+          text="5"
+          bgColor="light-green-bg-2"
+        />
+        <ReportCard
+          title="Total Cost (monthly)"
+          text="5"
+          bgColor="light-green-bg-2"
+        />
+        <ReportCard
+          title="Total Cost (Gross)"
+          text="5"
+          bgColor="light-green-bg-2"
+        />
       </div>
     </>
   );

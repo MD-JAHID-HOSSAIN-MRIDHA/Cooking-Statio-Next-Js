@@ -1,6 +1,7 @@
 
 import logo from "@/assets/images/Logo.svg";
 import Image from "next/image";
+import Link from "next/link";
 import NavLink from "./NavLink";
 
 export default function Navbar() {
@@ -101,7 +102,7 @@ export default function Navbar() {
                     Login
                   </NavLink>
 
-                  <NavLink href="/packages" className="cs_btn">Book Your Plan </NavLink>
+                  <Link href="/packages" className="cs_btn">Book Your Plan </Link>
                 </div>
               </div>
             </div>

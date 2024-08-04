@@ -44,3 +44,72 @@
     }
   }
 }
+#admin-navbar {
+  display: flex;
+  justify-content: space-between;
+  .search {
+    border-radius: 20px;
+    border-radius: 19px;
+    border: 0.6px solid #d5d5d5;
+    background: #f5f6fa;
+    padding-left: 2.2rem;
+  }
+  .search-icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-55%);
+    left: 10px;
+  }
+  .right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    .dropdown-toggle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      color: #646464;
+      font-family: $nunito;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      .user-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        gap: 5px;
+        .name {
+          color: #404040;
+          font-family: $nunito;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+        .role {
+          color: #565656;
+          font-family: $nunito;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+      }
+    }
+    .flag {
+      width: 40px;
+      height: 27px;
+      flex-shrink: 0;
+    }
+    .profile-pic {
+      width: 50px;
+      height: 52px;
+      flex-shrink: 0;
+      border-radius: 50%;
+    }
+  }
+}

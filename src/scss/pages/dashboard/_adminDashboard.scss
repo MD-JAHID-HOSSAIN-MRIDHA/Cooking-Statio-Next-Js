@@ -53,6 +53,24 @@
   @include breakpoint(mobile576) {
     flex-direction: row;
   }
+  .support-status-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .support-type-container {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    .support-type {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+    }
+  }
   .payment-card {
     border-radius: 14px;
     border: 1px solid var(--Foundation-Neutral-200, #e5e5e5);
@@ -102,7 +120,45 @@
             line-height: normal;
           }
         }
+        .event-type,
+        .event-count {
+          color: #77838f;
+          font-family: $inter;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
       }
     }
+  }
+}
+.event-row {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 40px 0px;
+  @include breakpoint(desktop1100) {
+    flex-direction: row;
+  }
+}
+.greet-container {
+  margin: 30px 0px;
+  .welcome {
+    color: var(--Gray-900, #101828);
+    font-family: $inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px; /* 126.667% */
+  }
+  .desc {
+    color: var(--Gray-500, #667085);
+    /* Text md/Regular */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
   }
 }
