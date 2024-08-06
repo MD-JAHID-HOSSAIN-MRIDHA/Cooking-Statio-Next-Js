@@ -15,7 +15,7 @@ export default function DashboardLayout({ children }) {
 
         {/* <!-- main content --> */}
         <div className="admin-main-conten overflow-x-auto">
-          <AdminNavbar/>
+          <AdminNavbar />
           <div className="wrapper">{children}</div>
         </div>
       </div>

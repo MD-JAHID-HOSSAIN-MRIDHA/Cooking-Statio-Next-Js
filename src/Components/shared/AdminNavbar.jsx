@@ -7,8 +7,8 @@ import Image from "next/image"
 export default function AdminNavbar() {
 
   return (
-    <div>
-      <nav className="navbar navbar-expand-lg">
+   
+      <nav className="navbar navbar-expand-lg bg-white ">
         <div className="container-fluid">
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#admin-navbar" aria-controls="admin-navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -73,6 +73,5 @@ export default function AdminNavbar() {
           </div>
         </div>
       </nav>
-    </div>
   )
 }
