@@ -10,7 +10,7 @@ export default function ChefSwiper() {
     <Swiper
       slidesPerView={1}
       spaceBetween={10}
-      autoplay={ {delay: 3000}}
+      autoplay={{ delay: 3000 }}
       breakpoints={{
         640: {
           slidesPerView: 2,
@@ -23,9 +23,7 @@ export default function ChefSwiper() {
       }}
       grabCursor={true}
       modules={[Pagination]}
-      pagination={{
-        clickable: true,
-      }}
+      pagination
       className="swiper chefswiper py-5">
       <SwiperSlide>
         <div className="chefcard">

@@ -46,6 +46,7 @@
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
+      cursor: pointer;
       @include flex-center;
       z-index: 2;
     }
@@ -254,6 +255,7 @@
   top: 60%;
   transition: 0.3s;
   z-index: 1;
+  cursor: pointer;
   &:hover {
     background-color: $primary;
     color: white;
@@ -539,8 +541,11 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   height: size(11);
   @include radius(20);
 }
-
-
+span.swiper-pagination-bullet {
+  background-color: #fbd85d;
+  opacity: 1;
+  @include square(11);
+}
 
 .gap {
   width: 100%;

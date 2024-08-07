@@ -36,7 +36,7 @@ export default function FeaturedSwiper() {
             spaceBetween: 40,
           },
         }}
-        navigation={{ nextEl: nextRef.current, prevEl: prevRef.current }}
+        navigation={{ nextEl: ".featured-swiper-next", prevEl: ".featured-swiper-prev" }}
         className="featured-swiper"
       >
         <SwiperSlide>
@@ -104,10 +104,10 @@ export default function FeaturedSwiper() {
           </div>
         </SwiperSlide>
       </Swiper>
-      <div ref={nextRef} className="featured-swiper-next">
+      <div className="featured-swiper-next">
         <MdKeyboardArrowRight size={30}/>
       </div>
-      <div ref={prevRef} className="featured-swiper-prev">
+      <div className="featured-swiper-prev">
         <MdKeyboardArrowLeft size={30}/>
       </div>
     </>
