@@ -108,7 +108,7 @@ export default function Home() {
             <p className="des">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               <br />
-              industry. Lorem Ipsum has been the industry&apos;s
+              industry. Lorem Ipsum has been the industry's
             </p>
           </div>
 
@@ -117,10 +117,10 @@ export default function Home() {
             <div className="step_card">
               <div className="content">
                 <figure>
-                  <Image src={verifyIcon} alt="verify icon" />
+                  <Image src={verifyIcon} alt="" />
                 </figure>
                 <h4 className="step">Register</h4>
-                <p className="step_des">
+                <p className="step_des" style={{ padding: "10px" }}>
                   Visit our website then register following this link.
                 </p>
               </div>
@@ -129,7 +129,7 @@ export default function Home() {
             <div className="step_card">
               <div className="content">
                 <figure>
-                  <Image src={planIcon} alt="Plan icon" />
+                  <Image src={planIcon} alt="" />
                 </figure>
                 <h4 className="step step_plan">Select a Plan</h4>
                 <p className="step_des">
@@ -141,7 +141,7 @@ export default function Home() {
             <div className="step_card">
               <div className="content">
                 <figure>
-                  <Image src={deliverIcon} alt="Deliver icon" />
+                  <Image src={deliverIcon} alt="" />
                 </figure>
                 <h4 className="step">Deliver</h4>
                 <p className="step_des">
@@ -153,7 +153,7 @@ export default function Home() {
             <div className="step_card">
               <div className="content">
                 <figure>
-                  <Image src={restaurantIcon} alt="Restaurant Icon" />
+                  <Image src={restaurantIcon} alt="" />
                 </figure>
                 <h4 className="step">Just Eat</h4>
                 <p className="step_des" style={{ width: "fit-content" }}>
