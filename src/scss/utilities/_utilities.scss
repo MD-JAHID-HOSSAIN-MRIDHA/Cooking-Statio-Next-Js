@@ -21,6 +21,9 @@
 .banner_title {
   @include font($eczar, 40, 500, normal, 52);
   color: $primary;
+  @include breakpoint(phone500){
+    @include font($eczar, 30, 500, normal, 52);
+  }
 }
 .banner_body {
   @include font($nunito, 18, 500, normal, 26);

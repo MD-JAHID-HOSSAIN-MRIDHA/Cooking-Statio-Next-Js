@@ -39,7 +39,10 @@ export default function Home() {
 
           <div className="hero_content flex-1 pt-3">
             <div>
-              <h1 className="banner_title text-center text-lg-start">
+              <h1
+                style={{ marginTop: "-4rem" }}
+                className="banner_title text-center text-lg-start"
+              >
                 Enjoy <span className="o"></span>ur Healthy and Delicious Dish
               </h1>
               <p className="banner_body py-3 text-justify">
