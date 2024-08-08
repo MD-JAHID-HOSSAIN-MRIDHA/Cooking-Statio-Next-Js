@@ -6,7 +6,7 @@
 .hero {
   @include flex-center;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
   padding-top: size(120);
   position: relative;
   .smile_icon {

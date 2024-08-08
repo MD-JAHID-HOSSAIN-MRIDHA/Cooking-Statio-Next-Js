@@ -1,6 +1,9 @@
 "use client";
 import loader from "@/assets/icons/loader.json";
-import Lottie from "lottie-react";
+import dynamic from "next/dynamic";
+const Lottie = dynamic(() => import("lottie-react"), {
+  ssr: false,
+});
 
 export default function Loading() {
   return (

@@ -4,7 +4,6 @@ import menuCard from "@/assets/images/menu/menu-card-bg.png";
 import { Image } from "react-bootstrap";
 import { FaCartShopping } from "react-icons/fa6";
 
-console.log(menuCard, "star");
 export default function MenuPage() {
   return (
     <>
