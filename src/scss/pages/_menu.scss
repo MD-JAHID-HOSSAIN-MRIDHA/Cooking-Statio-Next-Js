@@ -3,15 +3,16 @@
 
 .banner {
   background-color: rgba(0, 0, 0, 0.5);
-  background-image: url("../../assets/images/menu/background-menu.jpg");
+  background-image: url("../../assets/images/menu/12.png");
   background-blend-mode: overlay;
   clip-path: path(
     "M1524 528.824V-20H1043.22H691.147H321.069H-3V475.23C160.142 545.137 322.791 659.765 681.736 559.824C1017.21 466.418 1198.73 635.606 1440 559.824Z"
   );
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
-  height: 688px;
+  background-size: cover;
+  height: 804px;
+  margin-top: -4rem;
   .wrapper {
     @include flex-center;
     height: 619px;
@@ -19,6 +20,7 @@
     .banner-content {
       max-width: 692px;
       text-align: center;
+      margin-top: 4rem;
       .hero-title {
         @include font($eczar, 52, 700, normal, 72);
         color: #fff;
@@ -34,6 +36,7 @@
 
 .menu-section {
   position: relative;
+  top: -8rem;
   .menu-tab {
     margin: auto;
     // justify-content: space-between;
