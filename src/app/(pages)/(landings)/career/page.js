@@ -11,6 +11,7 @@ import orbit2 from "@/assets/images/orbit/orbit2.png";
 import orbit3 from "@/assets/images/orbit/orbit3.png";
 import orbit from "@/assets/images/orbit/orbitcenter.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata = {
   title: "Career || Cooking station",
@@ -99,7 +100,7 @@ export default function CareerPage() {
                     </div>
                   </div>
                   <div className="jobright  ">
-                    <a href="jobdetails.html" className="applynow">
+                    <Link href="/career/1" className="applynow">
                       <span className="text">Apply Now</span>
                       <span className="icon">
                         <svg
@@ -118,7 +119,7 @@ export default function CareerPage() {
                           />
                         </svg>
                       </span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="job">
@@ -183,7 +184,7 @@ export default function CareerPage() {
                     </div>
                   </div>
                   <div className="jobright  ">
-                    <a href="jobdetails.html" className="applynow">
+                    <Link href="/career/1" className="applynow">
                       <span className="text">Apply Now</span>
                       <span className="icon">
                         <svg
@@ -202,7 +203,7 @@ export default function CareerPage() {
                           />
                         </svg>
                       </span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="job">
@@ -267,7 +268,7 @@ export default function CareerPage() {
                     </div>
                   </div>
                   <div className="jobright  ">
-                    <a href="jobdetails.html" className="applynow">
+                    <Link href="/career/1" className="applynow">
                       <span className="text">Apply Now</span>
                       <span className="icon">
                         <svg
@@ -286,7 +287,7 @@ export default function CareerPage() {
                           />
                         </svg>
                       </span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="job">
@@ -351,7 +352,7 @@ export default function CareerPage() {
                     </div>
                   </div>
                   <div className="jobright  ">
-                    <a href="jobdetails.html" className="applynow">
+                    <Link href="/career/1" className="applynow">
                       <span className="text">Apply Now</span>
                       <span className="icon">
                         <svg
@@ -370,7 +371,7 @@ export default function CareerPage() {
                           />
                         </svg>
                       </span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
