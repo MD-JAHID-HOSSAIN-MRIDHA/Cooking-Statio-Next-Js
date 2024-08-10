@@ -1,11 +1,11 @@
 import downloadFromAppStore from "@/assets/icons/download-on-the-app-store-apple-logo-svgrepo-com.svg";
-import downloadFromPlayStore from "@/assets/icons/google-play-badge-logo-svgrepo-com.svg";
+import downloadFromPlayStore from "@/assets/icons/google-play-badge.svg";
 import qrCode from "@/assets/images/payment-methods/qr.png";
 import sslCommarze from "@/assets/images/sslcommerz-banner.png";
 import Image from "next/image";
 import Link from "next/link";
 import SocialList from "../list/SocialList";
-
+console.log(downloadFromPlayStore)
 export default function Footer() {
 
   return (

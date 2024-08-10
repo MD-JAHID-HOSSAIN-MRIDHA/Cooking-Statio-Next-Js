@@ -1,10 +1,17 @@
-
+"use client"
 import logo from "@/assets/images/Logo.svg";
 import Image from "next/image";
 import Link from "next/link";
+import { useRef } from "react";
 import NavLink from "./NavLink";
 
 export default function Navbar() {
+
+  const closeBtn = useRef(null)
+
+  const closeCanvas = () => {
+    closeBtn.current.click()
+  }
 
   return (
     <header>
@@ -46,6 +53,7 @@ export default function Navbar() {
                 className="btn-close"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
+                ref={closeBtn}
               >
                 <i className="fa-solid fa-xmark fs-4"></i>
               </button>
@@ -58,39 +66,47 @@ export default function Navbar() {
                       className="nav-link"
                       aria-current="page"
                       href="/"
+                      onClick={closeCanvas}
                     >
                       Home
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link" href="/about">About us</NavLink>
+                    <NavLink
+                      className="nav-link"
+                      href="/about"
+                      onClick={closeCanvas}
+                    >
+                      About us
+                    </NavLink>
                   </li>
 
                   <li className="nav-item">
-                    <NavLink className="nav-link" href="/menu">Menu</NavLink>
+                    <NavLink className="nav-link" href="/menu" onClick={closeCanvas}>Menu</NavLink>
                   </li>
 
                   <li className="nav-item">
-                    <NavLink className="nav-link" href="/event">Event</NavLink>
+                    <NavLink className="nav-link" href="/event" onClick={closeCanvas}>Event</NavLink>
                   </li>
 
                   <li className="nav-item">
-                    <NavLink className="nav-link" href="/packages">Packages</NavLink>
+                    <NavLink className="nav-link" href="/packages" onClick={closeCanvas}>Packages</NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link" href="/blog">Blog</NavLink>
+                    <NavLink className="nav-link" href="/blog" onClick={closeCanvas}>Blog</NavLink>
                   </li>
                   <li className="nav-item">
                     <NavLink
                       className="nav-link"
                       href="/authentications/chef-registration"
+                      onClick={closeCanvas}
                     >
                       Join as chef
                     </NavLink>
                   </li>
 
                   <li className="nav-item">
-                    <NavLink className="nav-link" href="/contact">Contact Us</NavLink>
+                    <NavLink className="nav-link" href="/contact" onClick={closeCanvas}>Contact Us</NavLink>
                   </li>
                 </ul>
 
@@ -98,11 +114,11 @@ export default function Navbar() {
                   className="d-lg-flex d-none justify-content-center align-items-center gap-3"
                   role="search"
                 >
-                  <NavLink href="/authentications/login" className="login_btn">
+                  <NavLink href="/authentications/login" className="login_btn" onClick={closeCanvas}>
                     Login
                   </NavLink>
 
-                  <Link href="/packages" className="cs_btn">Book Your Plan </Link>
+                  <Link href="/packages" className="cs_btn" onClick={closeCanvas}>Book Your Plan </Link>
                 </div>
               </div>
             </div>
