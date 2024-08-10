@@ -1,6 +1,13 @@
 @use "../global" as *;
 @use "../partials" as *;
 
+.blog-p-m-title{
+  text-align: center;
+  @include breakpoint(tab992){
+    text-align: left;
+  }
+}
+
 .blog {
   padding: 100px 0;
   .section-top {

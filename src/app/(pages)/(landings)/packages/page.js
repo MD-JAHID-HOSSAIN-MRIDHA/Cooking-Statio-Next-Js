@@ -1,4 +1,5 @@
 import packageImage from "@/assets/images/packages/package.png";
+import bgImage from "@/assets/images/pricing/pricing-hero.png";
 import Image from "next/image";
 
 export const metadata = {
@@ -12,7 +13,7 @@ export default function PackagesPage() {
       <section
         className="banner"
         style={{
-          backgroundImage: `url('/assets/images/pricing/pricing-hero.png')`,
+          backgroundImage: `url(${bgImage.src})`,
         }}
       >
         <div className="container">

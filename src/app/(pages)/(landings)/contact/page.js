@@ -5,7 +5,7 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <>
-      <section className="banner">
+      <section className="banner" style={{ height: "804px" }}>
         <div className="container">
           <div className="wrapper">
             <div className="banner-content">
@@ -23,7 +23,7 @@ export default function ContactPage() {
         </div>
       </section>
       {/* <!-- CONTACT FORM SECTION START --> */}
-      <section className="contact_form_sec">
+      <section className="contact_form_sec" style={{ marginTop: "-13rem" }}>
         <div className="container">
           <div className="section-top">
             <h2 className="title main_title">Talk with our contact team</h2>
@@ -113,7 +113,7 @@ export default function ContactPage() {
                 style={{ border: 0 }}
                 allowfullscreen=""
                 loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
+                referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
             <div className="contact_details">

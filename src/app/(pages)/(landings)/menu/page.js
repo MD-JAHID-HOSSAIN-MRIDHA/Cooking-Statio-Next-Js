@@ -4,10 +4,15 @@ import menuCard from "@/assets/images/menu/menu-card-bg.png";
 import { Image } from "react-bootstrap";
 import { FaCartShopping } from "react-icons/fa6";
 
+export const metadata = {
+  title: "Menu || Cooking station",
+  description: "this is menu of Cooking station",
+};
+
 export default function MenuPage() {
   return (
     <>
-      <section className="banner">
+      <section className="banner" style={{ height: "804px" }}>
         <div className="container">
           <div className="wrapper">
             <div className="banner-content">
