@@ -125,8 +125,8 @@ export default function Footer() {
             </div>
             <div className="col-lg-3">
               <div className="copyright-menu">
-                <a href="terms&condition.html">Terms & Conditions</a>
-                <a href="privacy-policy.html">Privacy</a>
+                <Link href="/terms&condition">Terms & Conditions</Link>
+                <Link href="/privacy-policy">Privacy</Link>
               </div>
             </div>
             <div className="col-lg-4">
