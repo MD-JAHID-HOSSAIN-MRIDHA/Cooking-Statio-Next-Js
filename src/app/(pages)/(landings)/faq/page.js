@@ -19,6 +19,8 @@ export default function FaqPage() {
                 src={febBusiness}
                 style={{ width: "80%" }}
                 alt="an image"
+                priority
+                placeholder="blur"
               />
             </figure>
           </div>

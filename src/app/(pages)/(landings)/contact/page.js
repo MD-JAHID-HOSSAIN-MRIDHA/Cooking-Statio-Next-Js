@@ -44,7 +44,7 @@ export default function ContactPage() {
             {/* <!-- contact form --> */}
             <form className="row contact_form">
               <div className="col-md-6">
-                <label for="name" className="form-label">
+                <label htmlFor="name" className="form-label">
                   Name *
                 </label>
                 <input
@@ -55,7 +55,7 @@ export default function ContactPage() {
                 />
               </div>
               <div className="col-md-6">
-                <label for="phone" className="form-label">
+                <label htmlFor="phone" className="form-label">
                   Phone Number{" "}
                 </label>
                 <input
@@ -66,7 +66,7 @@ export default function ContactPage() {
                 />
               </div>
               <div className="col-md-6">
-                <label for="email" className="form-label">
+                <label htmlFor="email" className="form-label">
                   {" "}
                   Email *
                 </label>
@@ -79,7 +79,7 @@ export default function ContactPage() {
               </div>
 
               <div className="col-12">
-                <label for="message" className="form-label">
+                <label htmlFor="message" className="form-label">
                   What would you like to discuss? *
                 </label>
                 <textarea
@@ -101,7 +101,7 @@ export default function ContactPage() {
       </section>
 
       {/* <!-- CONTACT INFO START  --> */}
-      <section className="contact_info">
+      <section className="contact_info" style={{ marginTop: "-8rem" }}>
         <div className="container">
           <div className="section-top">
             <h3 className="section-title">Get in touch</h3>
@@ -111,7 +111,7 @@ export default function ContactPage() {
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57880475.92593059!2d2.3640324644245894!3d27.69430943699798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa53e4f283f5eea4b%3A0xd8ee6df471e218a6!2sCooking%20Station!5e0!3m2!1sen!2sbd!4v1715762761568!5m2!1sen!2sbd"
                 style={{ border: 0 }}
-                allowfullscreen=""
+                allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
