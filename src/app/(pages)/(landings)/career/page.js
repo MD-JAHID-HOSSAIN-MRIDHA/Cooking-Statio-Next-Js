@@ -1,3 +1,11 @@
+import v1 from "@/assets/icons/corevalues/1.svg";
+import v2 from "@/assets/icons/corevalues/2.svg";
+import v3 from "@/assets/icons/corevalues/3.svg";
+import v4 from "@/assets/icons/corevalues/4.svg";
+import v5 from "@/assets/icons/corevalues/5.svg";
+import v6 from "@/assets/icons/corevalues/6.svg";
+import v7 from "@/assets/icons/corevalues/7.svg";
+import v8 from "@/assets/icons/corevalues/8.svg";
 import orbit1 from "@/assets/images/orbit/orbit1.png";
 import orbit2 from "@/assets/images/orbit/orbit2.png";
 import orbit3 from "@/assets/images/orbit/orbit3.png";
@@ -79,8 +87,8 @@ export default function CareerPage() {
                               fill="#85868B"
                             />
                             <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
+                              fillRule="evenodd"
+                              clipRule="evenodd"
                               d="M4.6001 1.59961C4.75923 1.59961 4.91184 1.66282 5.02436 1.77535C5.13688 1.88787 5.2001 2.04048 5.2001 2.19961V3.19961H10.8001V2.19961C10.8001 2.04048 10.8633 1.88787 10.9758 1.77535C11.0884 1.66282 11.241 1.59961 11.4001 1.59961C11.5592 1.59961 11.7118 1.66282 11.8244 1.77535C11.9369 1.88787 12.0001 2.04048 12.0001 2.19961V3.19961H12.2001C12.7836 3.19961 13.3432 3.43139 13.7557 3.84397C14.1683 4.25655 14.4001 4.81613 14.4001 5.39961V12.1996C14.4001 12.7831 14.1683 13.3427 13.7557 13.7552C13.3432 14.1678 12.7836 14.3996 12.2001 14.3996H3.8001C3.21662 14.3996 2.65704 14.1678 2.24446 13.7552C1.83188 13.3427 1.6001 12.7831 1.6001 12.1996V5.39961C1.6001 4.81613 1.83188 4.25655 2.24446 3.84397C2.65704 3.43139 3.21662 3.19961 3.8001 3.19961H4.0001V2.19961C4.0001 2.04048 4.06331 1.88787 4.17583 1.77535C4.28836 1.66282 4.44097 1.59961 4.6001 1.59961ZM3.8001 5.99961C3.2481 5.99961 2.8001 6.44761 2.8001 6.99961V12.1996C2.8001 12.7516 3.2481 13.1996 3.8001 13.1996H12.2001C12.7521 13.1996 13.2001 12.7516 13.2001 12.1996V6.99961C13.2001 6.44761 12.7521 5.99961 12.2001 5.99961H3.8001Z"
                               fill="#85868B"
                             />
@@ -130,7 +138,7 @@ export default function CareerPage() {
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                           >
-                            <g cliPath="url(#clip0_6468_1267)">
+                            <g clipPath="url(#clip0_6468_1267)">
                               <path
                                 d="M8.00016 0C6.23265 0.00194106 4.53808 0.704943 3.28826 1.95477C2.03844 3.20459 1.33544 4.89915 1.3335 6.66667C1.3335 10.188 6.9335 15.022 7.5695 15.562L8.00016 15.926L8.43083 15.562C9.06683 15.022 14.6668 10.188 14.6668 6.66667C14.6649 4.89915 13.9619 3.20459 12.7121 1.95477C11.4622 0.704943 9.76768 0.00194106 8.00016 0ZM8.00016 10C7.34089 10 6.69643 9.8045 6.14826 9.43823C5.6001 9.07196 5.17286 8.55136 4.92056 7.94228C4.66827 7.33319 4.60226 6.66297 4.73088 6.01637C4.8595 5.36976 5.17696 4.77582 5.64314 4.30964C6.10931 3.84347 6.70326 3.526 7.34986 3.39738C7.99646 3.26876 8.66669 3.33478 9.27577 3.58707C9.88486 3.83936 10.4055 4.2666 10.7717 4.81477C11.138 5.36293 11.3335 6.0074 11.3335 6.66667C11.3324 7.5504 10.9809 8.39763 10.356 9.02252C9.73112 9.64741 8.88389 9.99894 8.00016 10Z"
                                 fill="#85868B"
@@ -163,8 +171,8 @@ export default function CareerPage() {
                               fill="#85868B"
                             />
                             <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
+                              fillRule="evenodd"
+                              clipRule="evenodd"
                               d="M4.6001 1.59961C4.75923 1.59961 4.91184 1.66282 5.02436 1.77535C5.13688 1.88787 5.2001 2.04048 5.2001 2.19961V3.19961H10.8001V2.19961C10.8001 2.04048 10.8633 1.88787 10.9758 1.77535C11.0884 1.66282 11.241 1.59961 11.4001 1.59961C11.5592 1.59961 11.7118 1.66282 11.8244 1.77535C11.9369 1.88787 12.0001 2.04048 12.0001 2.19961V3.19961H12.2001C12.7836 3.19961 13.3432 3.43139 13.7557 3.84397C14.1683 4.25655 14.4001 4.81613 14.4001 5.39961V12.1996C14.4001 12.7831 14.1683 13.3427 13.7557 13.7552C13.3432 14.1678 12.7836 14.3996 12.2001 14.3996H3.8001C3.21662 14.3996 2.65704 14.1678 2.24446 13.7552C1.83188 13.3427 1.6001 12.7831 1.6001 12.1996V5.39961C1.6001 4.81613 1.83188 4.25655 2.24446 3.84397C2.65704 3.43139 3.21662 3.19961 3.8001 3.19961H4.0001V2.19961C4.0001 2.04048 4.06331 1.88787 4.17583 1.77535C4.28836 1.66282 4.44097 1.59961 4.6001 1.59961ZM3.8001 5.99961C3.2481 5.99961 2.8001 6.44761 2.8001 6.99961V12.1996C2.8001 12.7516 3.2481 13.1996 3.8001 13.1996H12.2001C12.7521 13.1996 13.2001 12.7516 13.2001 12.1996V6.99961C13.2001 6.44761 12.7521 5.99961 12.2001 5.99961H3.8001Z"
                               fill="#85868B"
                             />
@@ -247,8 +255,8 @@ export default function CareerPage() {
                               fill="#85868B"
                             />
                             <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
+                              fillRule="evenodd"
+                              clipRule="evenodd"
                               d="M4.6001 1.59961C4.75923 1.59961 4.91184 1.66282 5.02436 1.77535C5.13688 1.88787 5.2001 2.04048 5.2001 2.19961V3.19961H10.8001V2.19961C10.8001 2.04048 10.8633 1.88787 10.9758 1.77535C11.0884 1.66282 11.241 1.59961 11.4001 1.59961C11.5592 1.59961 11.7118 1.66282 11.8244 1.77535C11.9369 1.88787 12.0001 2.04048 12.0001 2.19961V3.19961H12.2001C12.7836 3.19961 13.3432 3.43139 13.7557 3.84397C14.1683 4.25655 14.4001 4.81613 14.4001 5.39961V12.1996C14.4001 12.7831 14.1683 13.3427 13.7557 13.7552C13.3432 14.1678 12.7836 14.3996 12.2001 14.3996H3.8001C3.21662 14.3996 2.65704 14.1678 2.24446 13.7552C1.83188 13.3427 1.6001 12.7831 1.6001 12.1996V5.39961C1.6001 4.81613 1.83188 4.25655 2.24446 3.84397C2.65704 3.43139 3.21662 3.19961 3.8001 3.19961H4.0001V2.19961C4.0001 2.04048 4.06331 1.88787 4.17583 1.77535C4.28836 1.66282 4.44097 1.59961 4.6001 1.59961ZM3.8001 5.99961C3.2481 5.99961 2.8001 6.44761 2.8001 6.99961V12.1996C2.8001 12.7516 3.2481 13.1996 3.8001 13.1996H12.2001C12.7521 13.1996 13.2001 12.7516 13.2001 12.1996V6.99961C13.2001 6.44761 12.7521 5.99961 12.2001 5.99961H3.8001Z"
                               fill="#85868B"
                             />
@@ -331,8 +339,8 @@ export default function CareerPage() {
                               fill="#85868B"
                             />
                             <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
+                              fillRule="evenodd"
+                              clipRule="evenodd"
                               d="M4.6001 1.59961C4.75923 1.59961 4.91184 1.66282 5.02436 1.77535C5.13688 1.88787 5.2001 2.04048 5.2001 2.19961V3.19961H10.8001V2.19961C10.8001 2.04048 10.8633 1.88787 10.9758 1.77535C11.0884 1.66282 11.241 1.59961 11.4001 1.59961C11.5592 1.59961 11.7118 1.66282 11.8244 1.77535C11.9369 1.88787 12.0001 2.04048 12.0001 2.19961V3.19961H12.2001C12.7836 3.19961 13.3432 3.43139 13.7557 3.84397C14.1683 4.25655 14.4001 4.81613 14.4001 5.39961V12.1996C14.4001 12.7831 14.1683 13.3427 13.7557 13.7552C13.3432 14.1678 12.7836 14.3996 12.2001 14.3996H3.8001C3.21662 14.3996 2.65704 14.1678 2.24446 13.7552C1.83188 13.3427 1.6001 12.7831 1.6001 12.1996V5.39961C1.6001 4.81613 1.83188 4.25655 2.24446 3.84397C2.65704 3.43139 3.21662 3.19961 3.8001 3.19961H4.0001V2.19961C4.0001 2.04048 4.06331 1.88787 4.17583 1.77535C4.28836 1.66282 4.44097 1.59961 4.6001 1.59961ZM3.8001 5.99961C3.2481 5.99961 2.8001 6.44761 2.8001 6.99961V12.1996C2.8001 12.7516 3.2481 13.1996 3.8001 13.1996H12.2001C12.7521 13.1996 13.2001 12.7516 13.2001 12.1996V6.99961C13.2001 6.44761 12.7521 5.99961 12.2001 5.99961H3.8001Z"
                               fill="#85868B"
                             />
@@ -385,10 +393,7 @@ export default function CareerPage() {
                 <div className="col-12 col-sm-6 col-lg-3">
                   <div className="cardcorevaleu">
                     <span className="icon">
-                      <img
-                        src="assets/icons/corevalues/1.svg"
-                        alt="core value icon "
-                      />
+                      <Image src={v1} alt="core value icon " />
                     </span>
                     <h3 className="title">Meaningful Work:</h3>
                     <p className="des">
@@ -400,10 +405,7 @@ export default function CareerPage() {
                 <div className="col-12 col-sm-6 col-lg-3">
                   <div className="cardcorevaleu">
                     <span className="icon">
-                      <img
-                        src="assets/icons/corevalues/2.svg"
-                        alt="core value icon "
-                      />
+                      <Image src={v2} alt="core value icon " />
                     </span>
                     <h3 className="title">Collaborative Culture</h3>
                     <p className="des">
@@ -415,10 +417,7 @@ export default function CareerPage() {
                 <div className="col-12 col-sm-6 col-lg-3">
                   <div className="cardcorevaleu">
                     <span className="icon">
-                      <img
-                        src="assets/icons/corevalues/1.svg"
-                        alt="core value icon "
-                      />
+                      <Image src={v3} alt="core value icon " />
                     </span>
                     <h3 className="title">Growth Opportunities:</h3>
                     <p className="des">
@@ -430,10 +429,7 @@ export default function CareerPage() {
                 <div className="col-12 col-sm-6 col-lg-3">
                   <div className="cardcorevaleu">
                     <span className="icon">
-                      <img
-                        src="assets/icons/corevalues/4.svg"
-                        alt="core value icon "
-                      />
+                      <Image src={v4} alt="core value icon " />
                     </span>
                     <h3 className="title">Innovation at the Core</h3>
                     <p className="des">
@@ -445,10 +441,7 @@ export default function CareerPage() {
                 <div className="col-12 col-sm-6 col-lg-3">
                   <div className="cardcorevaleu">
                     <span className="icon">
-                      <img
-                        src="assets/icons/corevalues/5.svg"
-                        alt="core value icon "
-                      />
+                      <Image src={v5} alt="core value icon " />
                     </span>
                     <h3 className="title">Ensuring transparency</h3>
                     <p className="des">
@@ -460,10 +453,7 @@ export default function CareerPage() {
                 <div className="col-12 col-sm-6 col-lg-3">
                   <div className="cardcorevaleu">
                     <span className="icon">
-                      <img
-                        src="assets/icons/corevalues/6.svg"
-                        alt="core value icon "
-                      />
+                      <Image src={v6} alt="core value icon " />
                     </span>
                     <h3 className="title">Diversity and Inclusion</h3>
                     <p className="des">
@@ -475,10 +465,7 @@ export default function CareerPage() {
                 <div className="col-12 col-sm-6 col-lg-3">
                   <div className="cardcorevaleu">
                     <span className="icon">
-                      <img
-                        src="assets/icons/corevalues/7.svg"
-                        alt="core value icon "
-                      />
+                      <Image src={v7} alt="core value icon " />
                     </span>
                     <h3 className="title">Work-Life Balance</h3>
                     <p className="des">
@@ -490,10 +477,7 @@ export default function CareerPage() {
                 <div className="col-12 col-sm-6 col-lg-3">
                   <div className="cardcorevaleu">
                     <span className="icon">
-                      <img
-                        src="assets/icons/corevalues/8.svg"
-                        alt="core value icon "
-                      />
+                      <Image src={v8} alt="core value icon " />
                     </span>
                     <h3 className="title">Patient Advocacy</h3>
                     <p className="des">
