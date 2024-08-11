@@ -4,7 +4,7 @@ export default function RegistrationForm() {
   return (
     <form className="authform">
       <div className="inputbox ">
-        <label for="name" className="inputlabel">
+        <label htmlFor="name" className="inputlabel">
           Name*
         </label>
 
@@ -13,12 +13,12 @@ export default function RegistrationForm() {
           id="name"
           className="inputfield"
           placeholder="Enter your  name"
-          autocomplete="off"
+          autoComplete="off"
         />
       </div>
 
       <div className="inputbox">
-        <label for="company-contact" className="inputlabel">
+        <label htmlFor="company-contact" className="inputlabel">
           Phone*
         </label>
 
@@ -27,12 +27,12 @@ export default function RegistrationForm() {
           id="company-contact"
           className="inputfield"
           placeholder=" Enter Your Phone"
-          autocomplete="off"
+          autoComplete="off"
         />
       </div>
 
       <div className="inputbox">
-        <label for="industry" className="inputlabel">
+        <label htmlFor="industry" className="inputlabel">
           {" "}
           Email{" "}
         </label>
@@ -42,11 +42,11 @@ export default function RegistrationForm() {
           id="industry"
           className="inputfield"
           placeholder="Enter Your Email "
-          autocomplete="off"
+          autoComplete="off"
         />
       </div>
       <div className="inputbox">
-        <label for="country" className="inputlabel">
+        <label htmlFor="country" className="inputlabel">
           Country
         </label>
         <select id="country" className="inputfield">
@@ -55,7 +55,7 @@ export default function RegistrationForm() {
         </select>
       </div>
       <div className="inputbox">
-        <label for="city" className="inputlabel">
+        <label htmlFor="city" className="inputlabel">
           City
         </label>
         <select id="city" className="inputfield">
@@ -75,7 +75,7 @@ export default function RegistrationForm() {
         </select>
       </div>
       <div className="inputbox">
-        <label for="address" className="inputlabel">
+        <label htmlFor="address" className="inputlabel">
           Address
         </label>
         <input
@@ -83,11 +83,11 @@ export default function RegistrationForm() {
           id="address"
           className="inputfield"
           placeholder="Enter Your Address"
-          autocomplete="off"
+          autoComplete="off"
         />
       </div>
       <div className="inputbox">
-        <label for="id_you_are" className="inputlabel">
+        <label htmlFor="id_you_are" className="inputlabel">
           {" "}
           You are{" "}
         </label>
@@ -119,7 +119,7 @@ export default function RegistrationForm() {
               checked
               hidden
             />
-            <label for="employeecount-1" className="radiolabel">
+            <label htmlFor="employeecount-1" className="radiolabel">
               Family
             </label>
           </div>
@@ -132,7 +132,7 @@ export default function RegistrationForm() {
               className="radio"
               hidden
             />
-            <label for="employeecount-2" className="radiolabel">
+            <label htmlFor="employeecount-2" className="radiolabel">
               Bachelor
             </label>
           </div>
@@ -145,7 +145,7 @@ export default function RegistrationForm() {
               className="radio"
               hidden
             />
-            <label for="employeecount-3" className="radiolabel">
+            <label htmlFor="employeecount-3" className="radiolabel">
               Student
             </label>
           </div>
@@ -158,14 +158,14 @@ export default function RegistrationForm() {
               className="radio"
               hidden
             />
-            <label for="employeecount-4" className="radiolabel">
+            <label htmlFor="employeecount-4" className="radiolabel">
               Official
             </label>
           </div>
         </div>
       </div>
       <div className="inputbox">
-        <label for="password" className="inputlabel">
+        <label htmlFor="password" className="inputlabel">
           Password*
         </label>
         <input
@@ -178,7 +178,7 @@ export default function RegistrationForm() {
       </div>
 
       <div className="inputbox">
-        <label for="confirm_password" className="inputlabel">
+        <label htmlFor="confirm_password" className="inputlabel">
           Confirm Password*
         </label>
         <input
@@ -192,7 +192,7 @@ export default function RegistrationForm() {
 
       <div className="agreebox">
         <input type="checkbox" id="agree" className="agreecheck" hidden />
-        <label for="agree" className="agreelabel">
+        <label htmlFor="agree" className="agreelabel">
           I Agree to the{" "}
           <a href="#" className="link">
             Terms and Policy

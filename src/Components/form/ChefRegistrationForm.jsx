@@ -8,7 +8,7 @@ export default function ChefRegistrationForm() {
   return (
     <form className="authform">
       <div className="inputbox">
-        <label for="fullName" className="inputlabel">
+        <label htmlFor="fullName" className="inputlabel">
           {" "}
           Full Name*{" "}
         </label>
@@ -17,12 +17,12 @@ export default function ChefRegistrationForm() {
           id="fullName"
           className="inputfield"
           placeholder=" Enter your full name"
-          autocomplete="off"
+          autoComplete="off"
         />
       </div>
 
       <div className="inputbox">
-        <label for="phone" className="inputlabel">
+        <label htmlFor="phone" className="inputlabel">
           {" "}
           Phone{" "}
         </label>
@@ -31,12 +31,12 @@ export default function ChefRegistrationForm() {
           id="phone"
           className="inputfield"
           placeholder="Enter your phone number"
-          autocomplete="off"
+          autoComplete="off"
         />
       </div>
 
       <div className="inputbox">
-        <label for="industry" className="inputlabel">
+        <label htmlFor="industry" className="inputlabel">
           {" "}
           Email{" "}
         </label>
@@ -46,12 +46,12 @@ export default function ChefRegistrationForm() {
           id="industry"
           className="inputfield"
           placeholder="Enter Your Email"
-          autocomplete="off"
+          autoComplete="off"
         />
       </div>
 
       <div className="inputbox">
-        <label for="fullName" className="inputlabel">
+        <label htmlFor="fullName" className="inputlabel">
           {" "}
           City{" "}
         </label>
@@ -60,11 +60,11 @@ export default function ChefRegistrationForm() {
           id="fullName"
           className="inputfield"
           placeholder=" Enter your city"
-          autocomplete="off"
+          autoComplete="off"
         />
       </div>
       <div className="inputbox">
-        <label for="fullName" className="inputlabel">
+        <label htmlFor="fullName" className="inputlabel">
           {" "}
           Full Address
         </label>
@@ -73,11 +73,11 @@ export default function ChefRegistrationForm() {
           id="fullName"
           className="inputfield"
           placeholder=" Enter your Full Address"
-          autocomplete="off"
+          autoComplete="off"
         />
       </div>
       <div className="inputbox">
-        <label for="fullName" className="inputlabel">
+        <label htmlFor="fullName" className="inputlabel">
           How many people can you serve daily?
         </label>
         <input
@@ -85,12 +85,12 @@ export default function ChefRegistrationForm() {
           id="fullName"
           className="inputfield"
           placeholder=" How many people can you serve daily?"
-          autocomplete="off"
+          autoComplete="off"
         />
       </div>
 
       {/* <!-- <div className="inputbox">
-          <label for="nid_passport" className="inputlabel">
+          <label htmlFor="nid_passport" className="inputlabel">
             NID or Passport
           </label>
           <div className="inputfield p-0">
@@ -101,7 +101,7 @@ export default function ChefRegistrationForm() {
               accept=".pdf, .jpg, .png"
               hidden
             />
-            <label for="nid_passport" className="upload_button">
+            <label htmlFor="nid_passport" className="upload_button">
               <i className="fa-solid fa-file-import me-1"></i> Choose
             </label>
             <span id="nid_passport">Choose NID or Passport</span>
@@ -119,7 +119,7 @@ export default function ChefRegistrationForm() {
               accept=".pdf, .jpg, .png"
               hidden
             />
-            <label for="food_sefety_certification" className="upload_button">
+            <label htmlFor="food_sefety_certification" className="upload_button">
               <i className="fa-solid fa-file-import me-1"></i> Choose
             </label>
             <span id="food_sefety_certification"
@@ -140,7 +140,7 @@ export default function ChefRegistrationForm() {
               accept=".pdf, .jpg, .png"
               hidden
             />
-            <label for="other_certification" className="upload_button">
+            <label htmlFor="other_certification" className="upload_button">
               <i className="fa-solid fa-file-import me-1"></i> Choose
             </label>
             <span id="other_cirtificate">Choose other certificate</span>
@@ -159,7 +159,7 @@ export default function ChefRegistrationForm() {
                 className="radio"
                 hidden
               />
-              <label for="serve_count_1_10" className="radiolabel">1-10</label>
+              <label htmlFor="serve_count_1_10" className="radiolabel">1-10</label>
             </div>
             <div className="inputradio">
               <input
@@ -169,7 +169,7 @@ export default function ChefRegistrationForm() {
                 className="radio"
                 hidden
               />
-              <label for="serve_count_11_20" className="radiolabel"
+              <label htmlFor="serve_count_11_20" className="radiolabel"
                 >11-20</label
               >
             </div>
@@ -182,7 +182,7 @@ export default function ChefRegistrationForm() {
                 className="radio"
                 hidden
               />
-              <label for="serve_count_21_50" className="radiolabel"
+              <label htmlFor="serve_count_21_50" className="radiolabel"
                 >21-50</label
               >
             </div>
@@ -195,14 +195,14 @@ export default function ChefRegistrationForm() {
                 className="radio"
                 hidden
               />
-              <label for="serve_count_50_plus" className="radiolabel"
+              <label htmlFor="serve_count_50_plus" className="radiolabel"
                 >50+</label
               >
             </div>
           </div>
         </div> --> */}
       <div className="inputbox">
-        <label for="nid_passport" className="inputlabel">
+        <label htmlFor="nid_passport" className="inputlabel">
           NID or Passport
         </label>
         <div className="p-0">
@@ -213,7 +213,7 @@ export default function ChefRegistrationForm() {
             accept=".pdf, .jpg, .png"
             hidden
           />
-          <label for="nid_passport" className="upload_button">
+          <label htmlFor="nid_passport" className="upload_button">
             <Image
               src={nidSvg}
               alt="NID svg"
@@ -239,7 +239,7 @@ export default function ChefRegistrationForm() {
             accept=".pdf, .jpg, .png"
             hidden
           />
-          <label for="food_safety_cirtificate" className="upload_button">
+          <label htmlFor="food_safety_cirtificate" className="upload_button">
             <Image
               src={food_safety_cirtificate}
               alt="Food Safety Certificate"
@@ -266,7 +266,7 @@ export default function ChefRegistrationForm() {
             accept=".pdf, .jpg, .png"
             hidden
           />
-          <label for="others_cirtificate" className="upload_button">
+          <label htmlFor="others_cirtificate" className="upload_button">
             <Image
               src={food_safety_cirtificate}
               alt="Others Certificate"
@@ -283,7 +283,7 @@ export default function ChefRegistrationForm() {
 
       <div className="agreebox">
         <input type="checkbox" id="agree" className="agreecheck" hidden />
-        <label for="agree" className="agreelabel">
+        <label htmlFor="agree" className="agreelabel">
           I Agree to the{" "}
           <a href="#" className="link">
             Terms and Policy

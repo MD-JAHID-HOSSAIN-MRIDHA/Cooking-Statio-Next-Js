@@ -95,15 +95,6 @@ export default function Navbar() {
                   <li className="nav-item">
                     <NavLink className="nav-link" href="/blog" onClick={closeCanvas}>Blog</NavLink>
                   </li>
-                  <li className="nav-item">
-                    <NavLink
-                      className="nav-link"
-                      href="/authentications/chef-registration"
-                      onClick={closeCanvas}
-                    >
-                      Join as chef
-                    </NavLink>
-                  </li>
 
                   <li className="nav-item">
                     <NavLink className="nav-link" href="/contact" onClick={closeCanvas}>Contact Us</NavLink>
@@ -118,7 +109,14 @@ export default function Navbar() {
                     Login
                   </NavLink>
 
-                  <Link href="/packages" className="cs_btn" onClick={closeCanvas}>Book Your Plan </Link>
+                  <button onClick={closeCanvas}>
+                    <Link
+                      href="/authentications/chef-registration"
+                      onClick={closeCanvas}
+                      className="cs_btn"
+                    >
+                      Join as chef
+                    </Link> </button>
                 </div>
               </div>
             </div>

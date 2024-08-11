@@ -58,13 +58,13 @@ $textPrimary: hsl(221, 13%, 46%); //#667085
       .swiper-pagination {
         @include flex-center;
         gap: size(8);
-
+        margin-top: 1rem;
         &-bullet {
           @include square(10);
           background: $textSecondary;
           margin: 0;
           opacity: 1;
-
+          border-radius: 1rem;
           &:hover:not(.active) {
             background: $headingText;
           }
