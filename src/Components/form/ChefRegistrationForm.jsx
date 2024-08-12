@@ -2,6 +2,7 @@
 import food_safety_cirtificate from "@/assets/icons/cirtificate.svg";
 import nidSvg from "@/assets/icons/NID.svg";
 import Image from "next/image";
+import Link from "next/link";
 import { FaUpload } from "react-icons/fa6";
 export default function ChefRegistrationForm() {
 
@@ -285,9 +286,9 @@ export default function ChefRegistrationForm() {
         <input type="checkbox" id="agree" className="agreecheck" hidden />
         <label htmlFor="agree" className="agreelabel">
           I Agree to the{" "}
-          <a href="#" className="link">
+          <Link href="/privacy-policy" className="link">
             Terms and Policy
-          </a>
+          </Link>
         </label>
       </div>
 
@@ -298,9 +299,9 @@ export default function ChefRegistrationForm() {
 
         <p className="authtext">
           Already have an account?
-          <a href="./login.html" className="authlink">
+          <Link href="/login" className="authlink">
             Login
-          </a>
+          </Link>
         </p>
       </div>
     </form>

@@ -2,8 +2,12 @@
 import Link from "next/link";
 export default function LoginForm() {
 
+  const handleLogin = e=> {
+    e.preventDefault()
+  }
+
   return (
-    <form className="authform">
+    <form onSubmit={handleLogin} className="authform needs-validation" noValidate>
       <div className="inputbox">
         <label htmlFor="name" className="inputlabel">
           {" "}
@@ -16,6 +20,7 @@ export default function LoginForm() {
           className="inputfield"
           placeholder="phone or email"
           autoComplete="off"
+          required
         />
       </div>
 
@@ -46,20 +51,20 @@ export default function LoginForm() {
           </label>
         </div>
         <div>
-          <a href="forgot-password.html" className="forgot_pass">
+          <Link href="/forgot-password" className="forgot_pass">
             Forgot password?
-          </a>
+          </Link>
         </div>
       </div>
 
       <div className="submitbox">
-        <button type="button" className="btn-submit">
+        <button type="submit" className="btn-submit">
           Get Started
         </button>
 
         <p className="authtext">
           Don&apos;t have an account yet?
-          <Link href="/authentications/register" className="authlink">
+          <Link href="/register" className="authlink">
             Sign up
           </Link>
         </p>

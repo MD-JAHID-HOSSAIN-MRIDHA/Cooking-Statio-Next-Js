@@ -105,13 +105,13 @@ export default function Navbar() {
                   className="d-lg-flex d-none justify-content-center align-items-center gap-3"
                   role="search"
                 >
-                  <NavLink href="/authentications/login" className="login_btn" onClick={closeCanvas}>
+                  <NavLink href="/login" className="login_btn" onClick={closeCanvas}>
                     Login
                   </NavLink>
 
                   <button onClick={closeCanvas}>
                     <Link
-                      href="/authentications/chef-registration"
+                      href="/chef-registration"
                       onClick={closeCanvas}
                       className="cs_btn"
                     >

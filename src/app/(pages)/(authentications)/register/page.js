@@ -1,6 +1,7 @@
 import logo from "@//assets/images/Logo.svg";
 import RegistrationForm from "@/Components/form/RegistrationForm";
 import NavLink from "@/Components/shared/NavLink";
+import AuthSlider from "@/Components/swiper/AuthSlider";
 import Image from "next/image";
 
 export const metadata = {
@@ -13,31 +14,7 @@ export default function Register() {
     <main className="authentications">
       <div className="left-content order-1">
         <div className="sliderbox">
-          <div className="swiper authSlider">
-            <div className="swiper-wrapper">
-              <div className="swiper-slide">
-                <img
-                  src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="slider-thumbnail"
-                />
-              </div>
-
-              <div className="swiper-slide">
-                <img
-                  src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="slider-thumbnail"
-                />
-              </div>
-
-              <div className="swiper-slide">
-                <img
-                  src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?q=80&w=1420&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="slider-thumbnail"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="swiper-pagination"></div>
+          <AuthSlider />
         </div>
       </div>
 
