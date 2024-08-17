@@ -5,7 +5,7 @@ import sslCommarze from "@/assets/images/sslcommerz-banner.png";
 import Image from "next/image";
 import Link from "next/link";
 import SocialList from "../list/SocialList";
-console.log(downloadFromPlayStore)
+
 export default function Footer() {
 
   return (

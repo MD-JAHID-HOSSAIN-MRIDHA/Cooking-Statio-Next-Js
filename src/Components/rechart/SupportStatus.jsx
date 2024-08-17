@@ -71,8 +71,8 @@ export default function SupportStatus() {
           innerRadius={60}
           outerRadius={100}
           labelLine
-          startAngle={80}
-          endAngle={440}
+          startAngle={90}
+          endAngle={500}
           activeShape={renderActiveShape}
           activeIndex={0}
         >

@@ -1,8 +1,11 @@
 import ReportCard from "@/Components/card/ReportCard";
-import SupportStatus from "@/Components/shared/SupportStatus";
 import bkash from "@/assets/images/payment-methods/bkash.jpg";
 import nagad from "@/assets/images/payment-methods/nagad.jpg";
+import dynamic from "next/dynamic";
 import Image from "next/image";
+const SupportStatus = dynamic(() =>
+  import("@/Components/rechart/SupportStatus")
+);
 
 const icon1 = (
   <svg
@@ -96,7 +99,9 @@ export default function AdminDashboard() {
     <>
       <div className="greet-container">
         <h3 className="welcome">Welcome back, Rafi</h3>
-        <p className="desc">Track, manage and forecast your customers and orders.</p>
+        <p className="desc">
+          Track, manage and forecast your customers and orders.
+        </p>
       </div>
       <div className="four-col-grid">
         <ReportCard title="Total Sales (Daily)" text="5" />
