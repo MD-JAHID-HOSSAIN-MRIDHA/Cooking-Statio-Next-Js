@@ -1,5 +1,5 @@
-@use '../../global' as *;
-@use '../../partials' as *;
+@use "../../global" as *;
+@use "../../partials" as *;
 
 table {
   tr {
@@ -8,6 +8,83 @@ table {
     th,
     td {
       vertical-align: middle;
+    }
+  }
+}
+.order-table {
+  // width: 1091px;
+  // height: 370px;
+  padding: 30px;
+  border-radius: 10px;
+  background: var(--Color, #fff);
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+    color: rgba(4, 13, 23, 0.8);
+    font-family: $inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.18px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+
+    thead {
+      background-color: #f0f9f4;
+
+      th {
+        padding: 12px;
+        font-weight: 600;
+        color: #333;
+        border-bottom: 1px solid #e0e0e0;
+
+        input[type="checkbox"] {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        &:hover {
+          background-color: #f9f9f9;
+        }
+
+        td {
+          padding: 12px;
+          border-bottom: 1px solid #e0e0e0;
+
+          input[type="checkbox"] {
+            margin-right: 10px;
+          }
+
+          .status {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: 600;
+            &.paid {
+              background-color: #e0f8e9;
+              color: #28a745;
+            }
+            &.pending {
+              background-color: #fff3cd;
+              color: #ffc107;
+            }
+            &.failed {
+              background-color: #f8d7da;
+              color: #dc3545;
+            }
+          }
+        }
+      }
     }
   }
 }

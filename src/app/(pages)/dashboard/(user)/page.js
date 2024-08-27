@@ -1,5 +1,10 @@
 import ReportCard from "@/Components/card/ReportCard";
 import dynamic from "next/dynamic";
+import OrderTable from "./OrderTable";
+const DatePicker = dynamic(
+  () => import("@/Components/date-picker/DatePicker"),
+  { ssr: false }
+);
 const ExpenseLineChart = dynamic(
   () => import("@/Components/rechart/ExpenseLineChart"),
   { ssr: false }
@@ -140,7 +145,12 @@ export default function CustomerDashboard() {
         <div className="col-lg-6">
           <ExpenseLineChart />
         </div>
-        <div className="col-lg-6"></div>
+        <div className="col-lg-6">
+          <DatePicker />
+        </div>
+        <div>
+          <OrderTable />
+        </div>
       </div>
     </>
   );

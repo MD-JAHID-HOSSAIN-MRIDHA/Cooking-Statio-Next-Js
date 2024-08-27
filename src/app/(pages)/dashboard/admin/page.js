@@ -3,8 +3,9 @@ import bkash from "@/assets/images/payment-methods/bkash.jpg";
 import nagad from "@/assets/images/payment-methods/nagad.jpg";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-const SupportStatus = dynamic(() =>
-  import("@/Components/rechart/SupportStatus")
+const SupportStatus = dynamic(
+  () => import("@/Components/rechart/SupportStatus"),
+  { ssr: false }
 );
 
 const icon1 = (

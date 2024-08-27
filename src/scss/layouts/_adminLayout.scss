@@ -28,17 +28,22 @@
     display: grid;
     grid-template-columns: 300px 1fr;
     grid-template-rows: auto 1fr;
-    column-gap: 24px;
+    // column-gap: 24px;
     .admin-banner-container {
       grid-column: 1 / span 2;
     }
     .admin-main-conten {
       height: 100vh;
       overflow-y: scroll;
-      padding: 0px 20px;
       grid-column: 1 / span 2;
       @include breakpoint(tab992) {
         grid-column: auto;
+      }
+      .admin-navbar{
+        padding: 10px 27px;
+      }
+      .wrapper {
+        padding: 0px 27px;
       }
     }
   }

@@ -8,8 +8,8 @@ export default function AdminNavbar() {
 
   return (
    
-      <nav className="navbar navbar-expand-lg bg-white ">
-        <div className="container-fluid">
+      <nav className="navbar navbar-expand-lg bg-white admin-navbar">
+        <div className="container-fluid px-0">
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#admin-navbar" aria-controls="admin-navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
